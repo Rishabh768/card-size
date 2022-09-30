@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Assignment || Rishabh chauhan</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="img active" style="background-image: url('./img1.jpg');">
+
+            <div class="overlay"></div>
+            <div class="inner">
+                <h3>Flower</h3> 
+            </div>
+            <svg width="30" height="30" fill="white" class=" arrow-icon" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+              </svg>
+        </div>
+        
+        <div class="img" style="background-image: url('./img2.jpg');">
+            <div class="overlay"></div>
+            <div class="inner">
+                <h3>nature</h3>  
+            </div>
+            <svg width="30" height="30" fill="white" class=" arrow-icon" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+              </svg>
+        </div>
+        
+        <div class="img " style="background-image:url('./img3.jpg');">
+            
+            <div class="overlay"></div>
+            <div class="inner">
+                <h3>Work</h3> 
+                
+            </div>
+            <svg width="30" height="30" fill="white" class=" arrow-icon" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+              </svg>
+        
+
+            </div>
+            
+        </div>
+    
+<script>
+    const images=document.querySelectorAll('.img');
+       images.forEach(item=>{
+            item.addEventListener('mouseenter',()=>{
+            removeClass();
+            item.classList.add('active');
+        });
+    });
+    
+    function removeClass(){
+        images.forEach(item=>{
+            item.classList.remove('active');
+        });
+      }
+    
+    </script>
+
+   
+</body>
+</html>
